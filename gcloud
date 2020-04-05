@@ -1,0 +1,6 @@
+gcloud init --skip-diagnostics
+
+##RSYNC 
+gsutil -m rsync -r  gs://20171117gbrlegacyfieldtrip/PhotoTransect/20171205 E:ReefCloud\20171117gbrlegacyfieldtrip\PhotoTransect\20171205
+## RSYNC excluding files with pattern
+gsutil -m rsync -r -x ".*^.gstmp$" gs://201912gbrfarnorth D:Shared\201912gbrfarnorth
